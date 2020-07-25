@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
 
 
 
-router.post('/extendTime', async (req, res) => {
+router.post('/postFile', async (req, res) => {
   let token = jwt.sign(req.body, 'robisthebest', { expiresIn: '2 hours' });
   let sendOut = {};
   sendOut.token = token;
